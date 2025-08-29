@@ -1,4 +1,4 @@
-# buzzline-01-case
+# buzzline-01-wilcox
 
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
 
@@ -69,6 +69,17 @@ Mac/Linux:
 ```zsh
 source .venv/bin/activate
 python3 -m consumers.basic_consumer_case
+```
+## Task 5. Customization
+This has been customized in both the producer and consumer folders. The run commands are below based on my project and I use macOS
+Mac/Linux:
+```zsh
+source .venv/bin/activate
+python3 -m producers.basic_producer_wilcox
+```
+```zsh
+source .venv/bin/activate
+python3 -m consumers.basic_consumer_wilcox
 ```
 
 ## Save Space
