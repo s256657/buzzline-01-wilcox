@@ -1,5 +1,5 @@
 """
-basic_consumer_case.py
+basic_consumer_wilcox.py
 
 Read a log file as it is being written. 
 """

@@ -1,5 +1,5 @@
 """
-basic_generator_case.py
+basic_generator_wilcox.py
 
 Generate some streaming buzz messages. 
 """
@@ -59,9 +59,8 @@ def get_message_interval() -> int:
 #####################################
 
 # Define some lists for generating buzz messages
-ADJECTIVES: list = ["amazing", "funny", "boring", "exciting", "weird"]
-ACTIONS: list = ["found", "saw", "tried", "shared", "loved"]
-TOPICS: list = ["a movie", "a meme", "an app", "a trick", "a story"]
+SONG: list = ["Cruel Summer", "Cardigan", "So Highschool", "King of my Heart", "Exile", "Haunted", "Shake it Off"]
+ALBUM: list = ["Lover","Folklore", "TTPD", "Reputation", "Evermore", "Speak Now", "1989"]
 
 #####################################
 # Define a function to generate buzz messages
@@ -80,10 +79,9 @@ def generate_messages():
     until we close the window or hit CTRL c (CMD c on Mac/Linux).
     """
     while True:
-        adjective = random.choice(ADJECTIVES)
-        action = random.choice(ACTIONS)
-        topic = random.choice(TOPICS)
-        yield f"I just {action} {topic}! It was {adjective}."
+        song = random.choice(SONG)
+        album = random.choice(ALBUM)
+        yield f"I am listening to {song} and feel like I am in my {album} era!"
 
 
 #####################################
