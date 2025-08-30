@@ -52,9 +52,17 @@ def process_message(log_file) -> None:
             print(f"Consumed log message: {message}")
 
             # monitor and alert on special conditions
-            if "I just loved a movie! It was funny." in message:
-                print(f"ALERT: The special message was found! \n{message}")
-                logger.warning(f"ALERT: The special message was found! \n{message}")
+            if (
+                "I am listening to Cruel Summer and feel like I am in my Lover era!" in message or
+                "I am listening to Cardigan and feel like I am in my Folklore era!" in message or
+                "I am listening to So Highschool and feel like I am in my TTPD era!" in message or
+                "I am listening to King of my Heart and feel like I am in my Reputation era!" in message or
+                "I am listening to Exile and feel like I am in my Evermore era!" in message or
+                "I am listening to Haunted and feel like I am in my Speak Now era!" in message or
+                "I am listening to Shake it Off and feel like I am in my 1989 era!"
+            ):
+                print(f"ALERT: SWIFTIE TIME! \n{message}")
+                logger.warning(f"ALERT: SWIFTIE TIME! \n{message}")
 
 
 #####################################
